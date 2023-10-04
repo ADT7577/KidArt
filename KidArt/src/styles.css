@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(133, 205, 114);
+  font-family: Copperplate, fantasy;
+
+  /* max-width: 600px;
+    margin: 20px;
+
+  height: 100vh; */
+  height: -webkit-fill-available;
+  height: fill-available;
+
+  /* position: fixed; */
+  /* touch-action: none; */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html {
+  height: -webkit-fill-available;
+  height: fill-available;
+}
+
+#warning {
+  color: black;
+  font-size: 20px;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+.logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#home {
+  display: none;
+  width: 206vw;
+  height: 97.5vw;
+}
+
+@media (max-height: 600px) {
+  body {
+    background: linear-gradient(
+        145.13deg,
+        #b11089 -2.82%,
+        rgba(11, 186, 8, 0) 30.49%
+      ),
+      linear-gradient(204.81deg, #aeda82 17.8%, rgba(12, 59, 231, 0) 90.18%),
+      #f99696;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: rgb(7, 112, 19);
+  }
+
+  #warning {
+    display: none;
+  }
+
+  #home {
+    display: flex;
+  }
+  #Canvas {
+    display: flex;
+    justify-content: center;
+  }
+  #myCanvas {
+    /* background-color: white; */
+    display: Inline flex;
+    justify-content: space-evenly;
+    /* border: 3px solid black; */
+    margin-top: 30px;
+    margin-left: 15px;
+    position: absolute;
+    left: 180px;
+    right: 30px;
+    top: 50px;
+  }
+
+  #header {
+    /* background-color: white; */
+    padding-bottom: 30px;
+    position: fixed;
+    height: 10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #left {
+    position: fixed;
+    height: 300px;
+    margin-left: 50px;
+    top: 60px;
+    bottom: 100px;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .buttons button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 10px;
+    background-color: rgb(191, 150, 189);
+    box-shadow: 2px 3px;
+  }
+}
+iframe {
+  display: none;
+}
